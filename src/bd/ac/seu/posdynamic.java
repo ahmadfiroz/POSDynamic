@@ -16,14 +16,21 @@ import javafx.stage.Stage;
  * @author Ahmad
  */
 public class posdynamic extends Application {
+    private static Stage stage;
+    
+    public static Stage getStage() {
+        return stage;
+    }
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        this.stage= stage;
+        Parent root = FXMLLoader.load(getClass().getResource("MainUI.fxml"));
         
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
+        stage.setTitle("Point  of Sale Dynamic");
         stage.show();
     }
 
