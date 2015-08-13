@@ -29,4 +29,13 @@ public class Product {
     public String getProductName() {
         return productName;
     }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public double getUnitPrice() {
+        return unitPrice;
+    }
+    
 }
