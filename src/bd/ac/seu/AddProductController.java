@@ -41,7 +41,7 @@ public class AddProductController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        String DB_URL = "jdbc:mysql://127.0.0.1/posdb/";
+        String DB_URL = "jdbc:mysql://127.0.0.1/posdb";
         String DB_USER = "ahmad";
         String DB_PASS = "easypassword";
         
